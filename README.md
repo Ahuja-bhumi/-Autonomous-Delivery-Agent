@@ -4,32 +4,33 @@ This project simulates an autonomous delivery agent navigating a 2D grid world. 
 The code file is named delivery_agent.py.
 
 Features
-GridWorld Environment
-Walls (#)
-Terrain costs (1-9)
-Moving obstacles (cyclic paths)
-Algorithms Implemented
-Breadth-First Search (BFS)
-Uniform Cost Search (UCS)
-A* Search
-Simulated Annealing with Replanning
-Experiment Logging
-Results saved in results/results.csv
-Performance plots generated for cost, nodes expanded, and execution time
-ASCII Visualization
-Prints the grid map with path, start (S), and goal (G)
-Installation
+ # GridWorld Environment
+       ~Walls (#)
+       ~Terrain costs (1-9)
+        ~Moving obstacles (cyclic paths
+#Algorithms Implemented
+        ~ Breadth-First Search (BFS)
+        ~ Uniform Cost Search (UCS)
+        ~ A* Search
+        ~ Simulated Annealing with Replanning
+# Experiment Logging
+    ~ Results saved in results/results.csv
+    ~ Performance plots generated for cost, nodes expanded, and execution time
+# ASCII Visualization
+   ~ Prints the grid map with path, start (S), and goal (G)
+   
+INSTALLATION :
 Make sure you have Python 3.8+ installed. Install the required libraries: pip install matplotlib pandas
 
-Usage
+USAGE:
 Run the program with command-line arguments: python delivery_agent.py [OPTIONS]
 
 Options
---algo Choose which algorithm to run. Values: bfs, ucs, astar, simulated_annealing_replan, all Default: all
+ --algo Choose which algorithm to run. Values: bfs, ucs, astar, simulated_annealing_replan, all Default: all
 
---map Choose which map to run on. Values: small, medium, large, dynamic, all Default: all
+ --map Choose which map to run on. Values: small, medium, large, dynamic, all Default: all
 
---plot Generate plots from results/results.csv.
+ --plot Generate plots from results/results.csv.
 
 Examples
 Run all algorithms on all maps: python delivery_agent.py Run A* on the medium map: python delivery_agent.py --algo astar --map medium Run BFS on the dynamic map with moving obstacles: python delivery_agent.py --algo bfs --map dynamic Generate comparison plots after running experiments: python delivery_agent.py --plot
