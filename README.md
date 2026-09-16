@@ -37,22 +37,23 @@ Run all algorithms on all maps: python delivery_agent.py Run A* on the medium ma
 
 Output
 Console shows algorithm performance: --- small ---
-bfs: cost=6, nodes=10, time=0.0001s
-ucs: cost=6, nodes=8, time=0.0001s
-astar: cost=6, nodes=6, time=0.0000s
-simulated_annealing_replan: cost=6, nodes=12, time=0.0012s
-Path visualization in ASCII grid:
-S***
-1#*1
-111*
-111G
-Results stored in:
-results/results.csv
-results/cost_comparison.png
-results/nodes_comparison.png
-results/time_comparison.png
-Future Improvements
-Support diagonal movement
-Add probabilistic moving obstacles
-Integrate real map inputs from external files
-GUI visualization of the agent
+      bfs: cost=6, nodes=10, time=0.0001s
+      ucs: cost=6, nodes=8, time=0.0001s
+      astar: cost=6, nodes=6, time=0.0000s
+      simulated_annealing_replan: cost=6, nodes=12, time=0.0012s
+      
+# Path visualization in ASCII grid:
+   S***
+   1#*1
+   111*
+   111G
+# Results stored in:
+    results/results.csv
+    results/cost_comparison.png
+    results/nodes_comparison.png
+    results/time_comparison.png
+# Future Improvements
+    Support diagonal movement
+    Add probabilistic moving obstacles
+    Integrate real map inputs from external files
+    GUI visualization of the agent
