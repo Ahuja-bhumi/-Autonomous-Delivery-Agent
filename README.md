@@ -36,7 +36,7 @@ Examples
 Run all algorithms on all maps: python delivery_agent.py Run A* on the medium map: python delivery_agent.py --algo astar --map medium Run BFS on the dynamic map with moving obstacles: python delivery_agent.py --algo bfs --map dynamic Generate comparison plots after running experiments: python delivery_agent.py --plot
 
 Output
-Console shows algorithm performance: --- small ---
+# Console shows algorithm performance: --- small ---
            bfs: cost=6, nodes=10, time=0.0001s
            ucs: cost=6, nodes=8, time=0.0001s
            astar: cost=6, nodes=6, time=0.0000s
